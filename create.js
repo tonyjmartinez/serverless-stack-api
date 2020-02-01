@@ -20,6 +20,6 @@ export async function main(event, context) {
     return success(params.Item);
   } catch (e) {
     console.log(e);
-    return failure({ status: false });
+    return failure({ status: e });
   }
 }
